@@ -1,0 +1,45 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para cada pantalla */
+#pantalla-1, #pantalla-2, #pantalla-3 {
+    width: 100%;
+    height: 100vh; /* Al 100% de la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+// Escucha el evento click en el botón de cada pantalla y muestra la siguiente pantalla
+document.getElementById("boton-pantalla-2").addEventListener("click", () => {
+    ("#pantalla-1") = "none";
+    ("#pantalla-2") = "block";
+});
+
+document.getElementById("boton-pantalla-3").addEventListener("click", () => {
+    ("#pantalla-2") = "none";
+    ("#pantalla-3") = "block";
+});
+
+document.getElementById("boton-pantalla-1").addEventListener("click", () => {
+    ("#pantalla-3") = "none";
+    ("#pantalla-1")= "block";
+});

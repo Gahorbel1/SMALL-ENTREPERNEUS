@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Diseñador</title>
+    <link rel="stylesheet" href="Styles7.css">
+      <link rel="stylesheet" href="Styles5.css">
+</head>
+<body>
+   
+<div class="navbar">
+        <a href="#" class="logo">SMALL ENTREPERNEUS</a>
+    </div>
+     <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+    
+    <div class="navbar">
+    <a href="#" class="logo">DATASOS</a>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+        <a href="#contact">Contacto</a> 
+        </div>
+   
+    <div class="container">
+        <h1>Mini Diseñador</h1>
+        <div class="toolbar">
+            <button id="addText">Texto</button>
+            <button id="addShape">Forma</button>
+        </div>
+        <div id="canvas" class="canvas">
+            <!-- Elementos añadidos aparecerán aquí -->
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

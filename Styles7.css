@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.toolbar {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.canvas {
+    border: 2px dashed #ccc;
+    background-color: #fff;
+    min-height: 400px;
+    position: relative;
+}
+.text-item, .shape-item {
+    position: absolute;
+    cursor: move;
+}

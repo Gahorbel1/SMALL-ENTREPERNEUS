@@ -1,0 +1,70 @@
+body {
+    font-family: fantasy:sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #5e35b1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: #5e35b1;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+#hamburgerMenu {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .navbar ul {
+        display: none;
+    }
+    
+    #hamburgerMenu {
+        display: block;
+    }
+}
